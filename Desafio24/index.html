@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de temperatura</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/temperatura.js"></script>
+
+    <title>Conversor de Temperaturas em JS</title>
+
+  </head>
+
+  <body onload="atualizaAnoRodape()">
+   
+      <div class="container">
+
+        <h3>Conversor de Temperaturas</h3>
+       
+        <div class="recado">
+          <p>
+            Informe uma temperatura abaixo e ela será convertida em 
+            outras medidas.
+          </p>
+        </div>
+        
+       
+        <input type="number" name="temperatura" id="temperatura" value="0" placeholder="Informe uma temperatura" onkeyup="converteTemperatura()" onchange="converteTemperatura()">
+
+        
+        <select name="simbolo" id="simbolo" onchange="converteTemperatura()">
+          <option value="celsius" selected> °C </option>
+          <option value="fahrenheit"> °F </option>
+          <option value="kelvin"> K </option>
+        </select>
+
+        <div id="convertido"></div>
+        
+      </div>
+     
+      <footer> Desenvolvido por William Lourenço - 2023</footer>
+  </body>
+</html>
